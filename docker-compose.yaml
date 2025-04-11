@@ -38,7 +38,7 @@ services:
       - db_data:/var/lib/mysql
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
-      - 3306:3306
+      - 3308:3306
     networks:
       - flask-network
     healthcheck:
